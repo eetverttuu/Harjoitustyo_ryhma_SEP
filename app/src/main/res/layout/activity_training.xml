@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:layout_marginTop="270dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llRadioButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rgTraining"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbTrainAttack"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Treenaa hyökkäystä" />
+
+        <RadioButton
+            android:id="@+id/rbTrainDefense"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Treenaa puolustusta" />
+
+        <RadioButton
+            android:id="@+id/rbHospital"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mene sairaalaan parantumaan" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:onClick="selectAct"
+        android:text="Suorita toiminto" />
+
+    <TextView
+        android:id="@+id/txtCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+</RelativeLayout>

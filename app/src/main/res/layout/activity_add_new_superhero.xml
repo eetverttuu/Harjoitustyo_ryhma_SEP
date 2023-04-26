@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewSuperheroActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Valitse supersankari"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgSuperheroType"
+        android:layout_width="154dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbCatWoman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cat Woman" />
+
+        <RadioButton
+            android:id="@+id/rbHulk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hulk" />
+
+        <RadioButton
+            android:id="@+id/rbSpiderman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spiderman" />
+
+        <RadioButton
+            android:id="@+id/rbBatman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batman" />
+
+        <RadioButton
+            android:id="@+id/rbWonderWoman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wonder Woman" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtSuperheroName"
+        android:layout_width="256dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Anna supersankarille nimi"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/rgSuperheroType"
+        app:layout_constraintStart_toStartOf="@+id/rgSuperheroType"
+        app:layout_constraintTop_toBottomOf="@+id/rgSuperheroType" />
+
+    <Button
+        android:id="@+id/btnAddNewSuperhero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="addSuperhero"
+        android:text="Lisää supersankari"
+        app:layout_constraintEnd_toEndOf="@+id/txtSuperheroName"
+        app:layout_constraintStart_toStartOf="@+id/txtSuperheroName"
+        app:layout_constraintTop_toBottomOf="@+id/txtSuperheroName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
